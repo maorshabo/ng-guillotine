@@ -1,8 +1,8 @@
 (function (angular, undefined) {
     'use strict';
 
-    var module = angular.module('guillotine', []);
-    module.directive('ngGuillotine', ['$parse',function ($parse) {
+    var module = angular.module('ngGuillotine', []);
+    module.directive('ngGuillotine', [function () {
         var supportsCanvas = document.createElement('canvas');
         supportsCanvas = !!(supportsCanvas.getContext && supportsCanvas.getContext('2d'));
         var TO_RADIANS = Math.PI/180;
@@ -16,7 +16,18 @@
                 image: '=',
                 resultImage: '='
             },
-            templateUrl: 'components/angular-guillotine/template.html',
+            template: '<div class="cropWrapper">' +
+                        '<div class="frame">' +
+                            '<img class="gulliotineCropImage" />' +
+                        '</div>' +
+                        '<div id="controls">' +
+                            '<a title="Rotate left" ng-click="rotateLeft()"><i class="fa fa-rotate-left"></i></a>' +
+                            '<a title="Zoom out" ng-click="zoomOut()"><i class="fa fa-search-minus"></i></a>' +
+                            '<a title="Fit image" ng-click="fitImage()"><i class="fa fa-arrows-alt"></i></a>' +
+                            '<a title="Zoom in" ng-click="zoomIn()"><i class="fa fa-search-plus"></i></a>' +
+                            '<a title="Rotate right" ng-click="rotateRight()"><i class="fa fa-rotate-right"></i></a>' +
+                        '</div>' +
+                    '</div>',
             link: function ($scope, elem, attrs) {
                 var $ = jQuery;
                 var element = $(elem).find('.gulliotineCropImage');

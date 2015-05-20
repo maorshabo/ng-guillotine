@@ -1,26 +1,19 @@
 {
-	"author": "",
-	"name": "ng-guilliotine-demo",
-	"version": "0.0.0",
-	"description": "",
-	"homepage": "",
-	"dependencies": {
-	},
-	"devDependencies": {
-		"express":"~3.4.4",
-		"grunt": "~0.4.1",
-		"grunt-contrib-concat": "~0.3.0",
-		"grunt-contrib-less": "~0.8.1",
-		"grunt-contrib-uglify": "~0.2.5",
-		"grunt-contrib-cssmin": "~0.7.0",
-		"grunt-contrib-jshint": "~0.7.0",
-		"grunt-karma": "~0.6.2"
-	},
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"repository": "",
-	"engines":{
-		"node":"0.10.10"
-	}
+  "name": "gulp-ng-seed",
+  "version": "0.0.0",
+  "main": "app.js",
+  "devDependencies": {
+    "gulp": "~3.8.11",
+    "gulp-angular-templatecache": "^1.1.0",
+    "gulp-concat": "~2.1.7",
+    "gulp-connect": "^1.0.7",
+    "gulp-jshint": "~1.5.0",
+    "gulp-load-plugins": "~0.4.0",
+    "gulp-minify-css": "^1.1.1",
+    "gulp-ruby-sass": "^0.7.1",
+    "karma": "^0.12.1",
+    "karma-chrome-launcher": "^0.1.2",
+    "karma-jasmine": "^0.1.5",
+    "wiredep": "^1.8.5"
+  }
 }

@@ -1,0 +1,6 @@
+<div>
+    <input type="file" name="image" class="inputFile" ngf-select ngf-change="homeCtrl.onFileSelect($files)" />
+    <div class="container">
+        <div ng-guillotine="{'width':'517','height':'250'}" image="homeCtrl.image" result-image="homeCtrl.croppedImage"></div>
+    </div>
+</div>
