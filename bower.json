@@ -1,10 +1,11 @@
 {
-  "name": "angular-guillotine",
+  "name": "ng-guillotine",
   "main": "app.js",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "authors": [
     "Maor Shabo <maorshabom@gmail.com>"
   ],
+  "keywords" : "ng-guillotine,guillotine,angular-guillotine,ngGuillotine",
   "license": "MIT",
   "private": false,
   "ignore": [
